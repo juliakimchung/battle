@@ -2,6 +2,15 @@ from classes.game import Person, bcolors
 from classes.magic import Spell
 from classes.inventory import Item
 
+print('\n\n')
+print("NAME              HP                                MP")
+print("                  _________________________         __________")
+print(bcolors.BOLD + "Valos:   " +  "340/460 |" +  bcolors.OKGREEN + "█████████████████     "  + bcolors.ENDC +  bcolors.BOLD +     "   |" +  "  65/65" + "|" + bcolors.OKBLUE + "██████████"+ bcolors.ENDC+ "|")
+print("                  _________________________         __________")
+print("Valos:   460/460 |                         |  65/65|          |")
+print("                  _________________________         __________")
+print("Valos:   460/460 |                         |  65/65|          |")
+
 #Create Black Magic
 fire = Spell("Fire", 10, 100, "black")
 thunder = Spell("Thunder", 10, 124, "black")
@@ -29,6 +38,7 @@ enemy = Person(1200, 65, 45, 25,[], [] )
 
 running = True
 i = 0
+print('\n\n')
 print(bcolors.FAIL + bcolors.BOLD + "AN ENEMY ATTACKS!" + bcolors.ENDC)
 
 while running:
